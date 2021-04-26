@@ -175,10 +175,12 @@ const inventory = [
 // - [x] we should have something like: [3, 4, 9, 11]
 // - [x] Loop over the array of numbers and add together (google it)
 
-
-const tvsToSell = inventory.map((television) => {
-  const tvsToSell = television.originalStock - television.sold;
-  return tvsToSell;
-});
-const totalTvsToSell = tvsToSell.reduce((a, b) => a + b, 0);
-console.log(totalTvsToSell);
+function calculateTvToSellCount() {
+  const tvsToSell = inventory.map((television) => {
+    return television.originalStock - television.sold;
+  });
+  let total = 0;
+  total = tvsToSell.reduce((a, b) => a + b, 0);
+  return total;
+}
+console.log(calculateTvToSellCount());
