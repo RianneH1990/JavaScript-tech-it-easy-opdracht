@@ -172,3 +172,14 @@ function calculateTvToSellCount() {
 }
 const totalCount = calculateTvToSellCount();
 console.log(totalCount);
+
+// - [x] Make variable for the new element
+// - [x] Create an element (document.createElement)
+// - [x] Set content bij changing elements:  element.textContent = total
+// - [x] appendChild
+
+const tvToSellElement = document.createElement("h1");
+console.log(tvToSellElement);
+tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
+document.body.appendChild(tvToSellElement);
+
