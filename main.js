@@ -162,25 +162,13 @@ const inventory = [
   },
 ];
 
-
-// ToDo list
-// - [x] Make a variable to a store the total
-// - [x] inventory.map(() => {});
-// - [x] callback functie schrijven voor map
-//    - [x] parameter: television
-//    - [x] Log the data we need: television.sold, television.originalStock
-//    - [x] Do math: const tvsToSell = originalStock - sold
-//    - [x] console.log(tvsToSell)
-// - [x] return the value from the callback: tvsToSell
-// - [x] we should have something like: [3, 4, 9, 11]
-// - [x] Loop over the array of numbers and add together (google it)
-
 function calculateTvToSellCount() {
   const tvsToSell = inventory.map((television) => {
     return television.originalStock - television.sold;
   });
   let total = 0;
   total = tvsToSell.reduce((a, b) => a + b, 0);
-  return total;
+    return total;
 }
-console.log(calculateTvToSellCount());
+const totalCount = calculateTvToSellCount();
+console.log(totalCount);

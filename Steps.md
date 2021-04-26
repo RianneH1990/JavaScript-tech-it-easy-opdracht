@@ -31,6 +31,21 @@ Output: number
         - [x] return the value from the callback: tvsToSell
     - [x] we should have something like: [3, 4, 9, 11]
     - [x] Loop over the array of numbers and add together (google it)      
+3. Do Programming (and check each step)
+4. Cleanup (refactor)
+
+###Red (werkt niet) -> Green (werk wel, maar slordig(Make it work)) -> Refactor (opschonen(Make it better))
 
 ####Opdracht 1b: 
 Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
+
+1. Choose strategy:
+   - Create a element
+   -  
+2. Make Todolist:
+   - [] Make variable for the new element
+   - [] Create an element (document.createElement)
+   - [] Set content bij changing elements:  element.textContent = total
+   - [] appendChild
+3. Do programming
+4. Cleanup
