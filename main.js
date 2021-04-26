@@ -1,4 +1,4 @@
-console.log("Checking!");
+// console.log("Checking!");
 
 // VOORRAAD ARRAY MET TV'S
 const inventory = [
@@ -166,26 +166,26 @@ const inventory = [
 
 
 // ToDo list
-// - [] Make a variable to a store the total
-// - [] inventory.map(() => {});
-// - [] callback functie schrijven voor map
-// - [] parameter: television
-// - [] Log the data we need: television.sold, television.originalStock
-// - [] Do math: const tvsToSell = originalStock - sold
-//     - [] console.log(tvsToSell)
-// - [] return the value from the callback: tvsToSell
-// - [] we should have something like: [3, 4, 9, 11]
-// - [] Loop over the array of numbers and add together (google it)
+// - [x] Make a variable to a store the total
+// - [x] inventory.map(() => {});
+// - [x] callback functie schrijven voor map
+//    - [x] parameter: television
+//    - [x] Log the data we need: television.sold, television.originalStock
+//    - [x] Do math: const tvsToSell = originalStock - sold
+//    - [x] console.log(tvsToSell)
+// - [x] return the value from the callback: tvsToSell
+// - [x] we should have something like: [3, 4, 9, 11]
+// - [x] Loop over the array of numbers and add together (google it)
 
-const total = 0;
+
 const tvsToSell = inventory.map((television) => {
   //console.log(television.sold);
   //console.log(television.originalStock);
   const tvsToSell = television.originalStock - television.sold;
-  console.log(tvsToSell);
+  //console.log(tvsToSell);
   return tvsToSell;
 });
-console.log(tvsToSell);
+//console.log(tvsToSell);
 
 const totalTvsToSell = tvsToSell.reduce((a, b) => a + b, 0);
 console.log(totalTvsToSell);
