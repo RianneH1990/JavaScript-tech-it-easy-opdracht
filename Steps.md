@@ -29,8 +29,8 @@ Output: number
         - [x] Do math: const tvsToSell = originalStock - sold
         - [x] console.log(tvsToSell)
         - [x] return the value from the callback: tvsToSell
-    - [x] we should have somthing like: [3, 4, 9, 11]
+    - [x] we should have something like: [3, 4, 9, 11]
     - [x] Loop over the array of numbers and add together (google it)      
 
 ####Opdracht 1b: 
-Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina
+Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.

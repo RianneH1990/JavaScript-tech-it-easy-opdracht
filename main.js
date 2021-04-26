@@ -1,5 +1,3 @@
-// console.log("Checking!");
-
 // VOORRAAD ARRAY MET TV'S
 const inventory = [
   {
@@ -179,13 +177,8 @@ const inventory = [
 
 
 const tvsToSell = inventory.map((television) => {
-  //console.log(television.sold);
-  //console.log(television.originalStock);
   const tvsToSell = television.originalStock - television.sold;
-  //console.log(tvsToSell);
   return tvsToSell;
 });
-//console.log(tvsToSell);
-
 const totalTvsToSell = tvsToSell.reduce((a, b) => a + b, 0);
 console.log(totalTvsToSell);
