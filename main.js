@@ -173,13 +173,12 @@ function calculateTvToSellCount() {
 const totalCount = calculateTvToSellCount();
 console.log(totalCount);
 
-// - [x] Make variable for the new element
-// - [x] Create an element (document.createElement)
-// - [x] Set content bij changing elements:  element.textContent = total
-// - [x] appendChild
-
-const tvToSellElement = document.createElement("h1");
-console.log(tvToSellElement);
-tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
-document.body.appendChild(tvToSellElement);
+function displayTvToSellCount() {
+  const tvToSellElement = document.createElement("h1");
+  tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
+  tvToSellElement.style.color = "red";
+//tvToSellElement.className = "sell-counter" Nu kun je hem in styles aanpassen ipv in js
+  document.body.appendChild(tvToSellElement);
+};
+displayTvToSellCount();
 
