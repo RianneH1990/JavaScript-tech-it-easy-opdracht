@@ -193,3 +193,14 @@ const tvsNoStock = inventory.filter((television) => {
         return soldAllStock === 0;
 });
 console.log(tvsNoStock);
+
+const tvsAmbiLight = inventory.filter((television) => {
+  return television.options.ambiLight === true;
+});
+console.log(tvsAmbiLight);
+
+  inventory.sort((a, b) => {
+    return a.price - b.price;
+  });
+console.log(inventory);
+

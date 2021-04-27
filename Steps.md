@@ -76,9 +76,9 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
 1. Choose strategy:
 -  Use the filter function to filter the tvs that have ambilight
 2. Make Todolist:
-    - []  make a variable to put the array method in
-    - []  inventory.filter(() => {});
-    - []  return the tvs that have ambilight
+    - [x]  make a variable to put the array method in
+    - [x]  inventory.filter(() => {});
+    - [x]  return the tvs that have ambilight
 3. Do programming
 4. Cleanup
 
@@ -86,8 +86,8 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
 1. Choose strategy:
 -  Use the sort method
 2. Make Todolist:
-    - []  inventory.sort((a, b) => {})
-    - []  a.price - b.price
-    - []  log the new list 
+    - [x]  inventory.sort((a, b) => {})
+    - [x]  a.price - b.price
+    - [x]  log the new list 
 3. Do programming
 4. Cleanup
