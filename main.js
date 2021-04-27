@@ -187,3 +187,9 @@ displayTvToSellCount();
     return "television type name: " + television.type;
   });
 console.log(tvNames);
+
+const tvsNoStock = inventory.filter((television) => {
+  const soldAllStock = television.originalStock - television.sold;
+        return soldAllStock === 0;
+});
+console.log(tvsNoStock);

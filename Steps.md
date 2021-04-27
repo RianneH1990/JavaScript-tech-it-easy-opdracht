@@ -64,11 +64,11 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
 1. Choose strategy:
     - Use the filter method on the array to get the tvs that have no stock left
 2. Make Todolist:
-    - []  Make a const to store total in
-    - []  inventory.filter(() => {});
-    - []  Write a callback function for filter
-    - []  Filter the tv's that have sold the same amount as the stock (have no tvs left)
-    - []  return those tvs
+    - [x]  Make a const to store total in
+    - [x]  inventory.filter(() => {});
+    - [x]  Write a callback function for filter
+    - [x]  Filter the tv's that have sold the same amount as the stock (have no tvs left)
+    - [x]  return those tvs
 3. Do programming
 4. Cleanup
 
