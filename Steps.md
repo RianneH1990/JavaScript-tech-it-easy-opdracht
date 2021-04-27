@@ -41,11 +41,53 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
 
 1. Choose strategy:
    - Create a element
-   -  
 2. Make Todolist:
-   - [] Make variable for the new element
-   - [] Create an element (document.createElement)
-   - [] Set content bij changing elements:  element.textContent = total
-   - [] appendChild
+   - [x] Make variable for the new element
+   - [x] Create an element (`document.createElement`)
+   - [x] Set content bij changing elements: `element.textContent = total`
+   - [x] appendChild
+3. Do programming
+4. Cleanup
+
+
+####Opdracht 2a: Gebruik een array-methode om een array te maken met alle tv-type namen.
+1. Choose strategy:
+    - Use the map methods to get the tv-types
+2. Make Todolist:
+    - [x] Make a variable to put an array method in
+    - [x] inventory.map(() => {});  
+    - [x] Create the method and log it
+3. Do programming
+4. Cleanup
+
+####Opdracht 2b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
+1. Choose strategy:
+    - Use the filter method on the array to get the tvs that have no stock left
+2. Make Todolist:
+    - []  Make a const to store total in
+    - []  inventory.filter(() => {});
+    - []  Write a callback function for filter
+    - []  Filter the tv's that have sold the same amount as the stock (have no tvs left)
+    - []  return those tvs
+3. Do programming
+4. Cleanup
+
+####Opdracht 2c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
+1. Choose strategy:
+-  Use the filter function to filter the tvs that have ambilight
+2. Make Todolist:
+    - []  make a variable to put the array method in
+    - []  inventory.filter(() => {});
+    - []  return the tvs that have ambilight
+3. Do programming
+4. Cleanup
+
+####Opdracht 2d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
+1. Choose strategy:
+-  Use the sort method
+2. Make Todolist:
+    - []  inventory.sort((a, b) => {})
+    - []  a.price - b.price
+    - []  log the new list 
 3. Do programming
 4. Cleanup

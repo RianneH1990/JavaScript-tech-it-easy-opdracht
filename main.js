@@ -166,7 +166,7 @@ function calculateTvToSellCount() {
   const tvsToSell = inventory.map((television) => {
     return television.originalStock - television.sold;
   });
-  let total = 0;
+  let total;
   total = tvsToSell.reduce((a, b) => a + b, 0);
     return total;
 }
@@ -179,6 +179,11 @@ function displayTvToSellCount() {
   tvToSellElement.style.color = "red";
 //tvToSellElement.className = "sell-counter" Nu kun je hem in styles aanpassen ipv in js
   document.body.appendChild(tvToSellElement);
-};
+}
 displayTvToSellCount();
 
+
+  const tvNames = inventory.map((television) => {
+    return "television type name: " + television.type;
+  });
+console.log(tvNames);
