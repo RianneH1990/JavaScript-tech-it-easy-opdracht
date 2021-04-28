@@ -161,7 +161,7 @@ const inventory = [
     sold: 8,
   },
 ];
-
+//Opdracht 1a: Hoeveel exemplaren moeten we nog verkopen? Schrijf een functie die dit berekent.
 function calculateTvToSellCount() {
   const tvsToSell = inventory.map((television) => {
     return television.originalStock - television.sold;
@@ -173,6 +173,7 @@ function calculateTvToSellCount() {
 const totalCount = calculateTvToSellCount();
 console.log(totalCount);
 
+//Opdracht 1b: Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina
 function displayTvToSellCount() {
   const tvToSellElement = document.createElement("h1");
   tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
@@ -182,25 +183,46 @@ function displayTvToSellCount() {
 }
 displayTvToSellCount();
 
-
+//Opdracht 2a: Gebruik een array-methode om een array te maken met alle tv-type namen.
   const tvNames = inventory.map((television) => {
     return "television type name: " + television.type;
   });
 console.log(tvNames);
 
+//Opdracht 2b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
 const tvsNoStock = inventory.filter((television) => {
   const soldAllStock = television.originalStock - television.sold;
         return soldAllStock === 0;
 });
 console.log(tvsNoStock);
 
+//Opdracht 2c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 const tvsAmbiLight = inventory.filter((television) => {
   return television.options.ambiLight === true;
 });
 console.log(tvsAmbiLight);
 
+//Opdracht 2d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
   inventory.sort((a, b) => {
     return a.price - b.price;
   });
 console.log(inventory);
 
+//Opdracht 3a: Wat is onze doel-opbrengst? Bereken wat de totale opbrengst is, als we alle exemplaren van ieder type zouden verkopen. Geef dit in het blauw weer op de pagina.
+function calculateOverallIncome() {
+  const overallIncome = inventory.map((television) => {
+    return incomeOneTv = television.price * television.originalStock;
+  });
+  let total;
+  total = overallIncome.reduce((a, b) => a + b, 0);
+  return total;
+}
+const totalIncome = calculateOverallIncome();
+
+function displayOverallIncome() {
+  const tvSellincome = document.createElement("h1");
+  tvSellincome.textContent = `This is total income if all tvs are sold: €${totalIncome},-`;
+  tvSellincome.style.color = "blue";
+  document.body.appendChild(tvSellincome);
+}
+displayOverallIncome();
