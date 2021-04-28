@@ -125,3 +125,13 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
     - [x] appendChild
 3. Do programming
 4. Cleanup
+
+####Opdracht 4: Geef de type-namen van twee tv's weer op de pagina. Welke tv's dat precies zijn, maakt niet zoveel uit. Voor nu betekent dit dat je het appenden van de nodes twee keer moet uitschrijven, dat is niet erg!
+1. Choose strategy:
+- Use the array made for 2a and log 2 on the page
+2. Make Todolist:
+    - [x] Create an element (`document.createElement`)
+    - [x] Set content by changing elements: `element.textContent =  `
+    - [x] appendChild 2x
+3. Do programming
+4. Cleanup

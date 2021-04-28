@@ -184,10 +184,13 @@ function displayTvToSellCount() {
 displayTvToSellCount();
 
 //Opdracht 2a: Gebruik een array-methode om een array te maken met alle tv-type namen.
+function tvtypes() {
   const tvNames = inventory.map((television) => {
-    return "television type name: " + television.type;
+    return television.type;
   });
-console.log(tvNames);
+  return tvNames;
+}
+const tvTypeName = tvtypes();
 
 //Opdracht 2b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
 const tvsNoStock = inventory.filter((television) => {
@@ -245,4 +248,19 @@ function displayAlreadyMade() {
   document.body.appendChild(incomeMade);
 }
 displayAlreadyMade();
+
+//Opdracht 4: Geef de type-namen van twee tv's weer op de pagina. Welke tv's dat precies zijn, maakt niet zoveel uit. Voor nu betekent dit dat je het appenden van de nodes twee keer moet uitschrijven, dat is niet erg!
+function displayName1() {
+  const televisionName1 = document.createElement("h3");
+  televisionName1.textContent =  `Television type name: ${tvTypeName[0]}`;
+  document.body.appendChild(televisionName1);
+}
+displayName1();
+
+function displayName2() {
+  const televisionName2 = document.createElement("h3");
+  televisionName2.textContent =  `Television type name: ${tvTypeName[5]}`;
+  document.body.appendChild(televisionName2);
+}
+displayName2();
 
