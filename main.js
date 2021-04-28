@@ -226,3 +226,23 @@ function displayOverallIncome() {
   document.body.appendChild(tvSellincome);
 }
 displayOverallIncome();
+
+//Opdracht 3b: Hoeveel hebben we tot nu toe verdient? Bereken hoeveel we tot nu toe verdient hebben met het aantal verkochte tv's. Geef dit weer in het groen weer op de pagina. (zet sort uit voor de logs)
+function incomeBySold() {
+  const alreadySold = inventory.map((television) => {
+    return alreadyMadeInSales = television.price * television.sold;
+  });
+  let total;
+  total = alreadySold.reduce((a, b) => a + b, 0);
+  return total;
+}
+const totalMade = incomeBySold();
+
+function displayAlreadyMade() {
+  const incomeMade = document.createElement("h1");
+  incomeMade.textContent = `This is the money made in current sales: €${totalMade},-`;
+  incomeMade.style.color = "green";
+  document.body.appendChild(incomeMade);
+}
+displayAlreadyMade();
+

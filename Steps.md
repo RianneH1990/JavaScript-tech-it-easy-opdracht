@@ -96,25 +96,32 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
 1. Choose strategy:
 -  Use a map method to map out the prices
 2. Make Todolist:
-    - [] Make a variable to put an array method in
-    - [] inventory.map(() => {});
-    - [] Calculate the price * stock per tv
-    - [] Add all the individual outcomes together 
-    - [] Create the method and log it
-    - [] Make variable for the new element
-    - [] Create an element (`document.createElement`)
-    - [] Set content bij changing elements: `element.textContent = total`
-    - [] style the new element
-    - [] appendChild
+    - [x] Make a variable to put an array method in
+    - [x] inventory.map(() => {});
+    - [x] Calculate the price * stock per tv
+    - [x] Add all the individual outcomes together 
+    - [x] Create the method and log it
+    - [x] Make variable for the new element
+    - [x] Create an element (`document.createElement`)
+    - [x] Set content bij changing elements: `element.textContent = total`
+    - [x] style the new element
+    - [x] appendChild
 3. Do programming
 4. Cleanup
 
-####Opdracht 6b: Hoeveel hebben we tot nu toe verdient? Bereken hoeveel we tot nu toe verdient hebben met het aantal verkochte tv's. Geef dit weer in het groen weer op de pagina.
+####Opdracht 3b: Hoeveel hebben we tot nu toe verdient? Bereken hoeveel we tot nu toe verdient hebben met het aantal verkochte tv's. Geef dit weer in het groen weer op de pagina.
 1. Choose strategy:
--
+- Use a map method to map out the prices
 2. Make Todolist:
-    - []
-    - []
-    - []
+    - [x] Make a variable to put an array method in
+    - [x] inventory.map(() => {});
+    - [x] Calculate the price * sold per tv
+    - [x] Add all the individual outcomes together
+    - [x] Create the method and log it
+    - [x] Make variable for the new element
+    - [x] Create an element (`document.createElement`)
+    - [x] Set content bij changing elements: `element.textContent = total`
+    - [x] style the new element
+    - [x] appendChild
 3. Do programming
 4. Cleanup
