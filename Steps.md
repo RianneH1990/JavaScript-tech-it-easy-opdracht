@@ -135,3 +135,53 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina.
     - [x] appendChild 2x
 3. Do programming
 4. Cleanup
+
+####Opdracht 5a: Zorg ervoor dat er een string wordt gegenereerd voor de naam van een tv. Maak een functie die één tv-object als parameter verwacht en de naam op de volgende manier samenvoegt: `[merk] [type] - [naam]` zoals Philips 43PUS6504/12 - 4K TV of NIKKEI NH3216SMART - HD smart TV. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
+1. Choose strategy:
+- Use a filter find that filters type number.
+2. Make Todolist:
+   - []  inventory.find(() => {});
+   - []  
+   - []  return inventory.type === "43PUS6504/12";
+3. Do programming
+4. Cleanup
+
+####Opdracht 5b: Zorg ervoor dat de prijs van een tv netjes geformat wordt. Maak een functie die één tv-prijs als parameter verwacht (zoals 379) en daar de volgende string van maakt: €379,-. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
+1. Choose strategy:
+-
+2. Make Todolist:
+   - []
+   - []
+   - []
+3. Do programming
+4. Cleanup
+
+####Opdracht 5c: Zorg ervoor dat er een string wordt gegenereerd voor alle beschikbare schermgroottes van één tv in zowel inches als cm Maak een functie die één screen-sizes array verwacht en de groottes op de volgende manier samenvoegt: `[schermgrootte]` inches ([schermgrootte omgerekend]cm) | [schermgrootte] inches ([schermgrootte omgerekend]cm) etc. Dus een input van [32] geeft 32 inch (81 cm) en een input van [43, 50, 55, 58] geeft 43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm). Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken, zowel voor tv's met maar één schermgrootte als met tientallen schermgroottes.
+1. Choose strategy:
+-
+2. Make Todolist:
+   - []
+   - []
+   - []
+3. Do programming
+4. Cleanup
+
+####Opdracht 5d: Zorg ervoor de informatie van één van de twee tv's zoals het voorbeeld wordt weergegeven op de pagina. Gebruik hiervoor de functies die je hebt gemaakt in opdracht 5a, 5b en 5c.
+1. Choose strategy:
+-
+2. Make Todolist:
+   - []
+   - []
+   - []
+3. Do programming
+4. Cleanup
+
+####Opdracht 5e: Schrijf een functie die ALLE tv's weergeeft op de pagina zoals in het voorbeeld. Dit wil je natuurlijk niet acht keer opnieuw schrijven, want nu zijn het 8 tv's, maar in de toekomst misschien wel 200! Gebruik in deze functie de voorgaande functies die je hebt geschreven, om onderdelen van de data te formatten. Deze "tv-generator-functie" verwacht één parameter: de volledige array met tv-objecten. Vergeet 'm niet aan te roepen!
+1. Choose strategy:
+-
+2. Make Todolist:
+   - []
+   - []
+   - []
+3. Do programming
+4. Cleanup

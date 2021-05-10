@@ -176,7 +176,7 @@ console.log(totalCount);
 //Opdracht 1b: Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina
 function displayTvToSellCount() {
   const tvToSellElement = document.createElement("h1");
-  tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
+  tvToSellElement.textContent = `We still need to sell ${totalCount} tv's`;
   tvToSellElement.style.color = "red";
 //tvToSellElement.className = "sell-counter" Nu kun je hem in styles aanpassen ipv in js
   document.body.appendChild(tvToSellElement);
@@ -185,10 +185,9 @@ displayTvToSellCount();
 
 //Opdracht 2a: Gebruik een array-methode om een array te maken met alle tv-type namen.
 function tvtypes() {
-  const tvNames = inventory.map((television) => {
+  return inventory.map((television) => {
     return television.type;
   });
-  return tvNames;
 }
 const tvTypeName = tvtypes();
 
@@ -214,6 +213,7 @@ console.log(inventory);
 //Opdracht 3a: Wat is onze doel-opbrengst? Bereken wat de totale opbrengst is, als we alle exemplaren van ieder type zouden verkopen. Geef dit in het blauw weer op de pagina.
 function calculateOverallIncome() {
   const overallIncome = inventory.map((television) => {
+    let incomeOneTv;
     return incomeOneTv = television.price * television.originalStock;
   });
   let total;
@@ -263,4 +263,25 @@ function displayName2() {
   document.body.appendChild(televisionName2);
 }
 displayName2();
+
+//Opdracht 5a: Zorg ervoor dat er een string wordt gegenereerd voor de naam van een tv. Maak een functie die één tv-object als parameter verwacht en de naam op de volgende manier samenvoegt: `[merk] [type] - [naam]` zoals Philips 43PUS6504/12 - 4K TV of NIKKEI NH3216SMART - HD smart TV. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
+function tvName(tvObject) {
+  let result;
+  const tvSting = inventory.filter((television) => {
+    if (television.type === tvObject || television.name === tvObject || television.brand === tvObject) {
+      result = television.brand + " " + television.type + " - " + television.name;
+    }
+  })
+  return result;
+}
+console.log(tvName('Philips'));
+
+// Opdracht 5b: Zorg ervoor dat de prijs van een tv netjes geformat wordt. Maak een functie die één tv-prijs als parameter verwacht (zoals 379) en daar de volgende string van maakt: €379,-. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
+
+function tvPrice(price) {
+  return "€" + price + ",-";
+}
+console.log(tvPrice(379));
+
+// Opdracht 5c: Zorg ervoor dat er een string wordt gegenereerd voor alle beschikbare schermgroottes van één tv in zowel inches als cm Maak een functie die één screen-sizes array verwacht en de groottes op de volgende manier samenvoegt: `[schermgrootte]` inches ([schermgrootte omgerekend]cm) | [schermgrootte] inches ([schermgrootte omgerekend]cm) etc. Dus een input van [32] geeft 32 inch (81 cm) en een input van [43, 50, 55, 58] geeft 43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm). Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken, zowel voor tv's met maar één schermgrootte als met tientallen schermgroottes.
 
